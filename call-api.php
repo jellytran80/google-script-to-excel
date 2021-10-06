@@ -39,14 +39,13 @@ function callAPI($method, $url, $data)
     curl_close($curl);
     return $result;
 }
-
-        // ghi log qua google
-        // $url_api = 'https://script.google.com/macros/s/AKfycbx-Yt4jkErt9VGodL5GPEQuvRaOzJbAUsgNXSEDvq71uZzXmiczuNvQNagMAMkAd982/exec';
-        // callAPI('GET', $url_api, $postData);
-        // $get_data = callAPI('GET', $url_api, $postData);
-        // $response = json_decode($get_data, true);
-        // if ($response['result'] == 'success' && is_int($response['row'])) {
-        //     wp_send_json_success();
-        // } else {
-        //     wp_send_json_error();
-        // }
+// Using with Wordpress
+// $url_api = 'https://script.google.com/macros/s/<google_key>/exec';
+// callAPI('GET', $url_api, $postData);
+// $get_data = callAPI('GET', $url_api, $postData);
+// $response = json_decode($get_data, true);
+// if ($response['result'] == 'success' && is_int($response['row'])) {
+//     wp_send_json_success();
+// } else {
+//     wp_send_json_error();
+// }
